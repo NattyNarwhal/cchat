@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
 # "Software"), to deal in the Software without restriction, including
@@ -28,7 +30,7 @@
 # sucking the log out of its container.
 
 import sys
-import olefile
+import olefile # if you don't have it, see http://www.decalage.info/olefile
 
 def main():
 	# kill the invoker name
@@ -37,6 +39,6 @@ def main():
 		ole = olefile.OleFileIO(f)
 		log = ole.openstream("Contents")
 		log_text = log.read()
-		print log_text
+		print(log_text)
 
 main()
