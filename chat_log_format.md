@@ -2,7 +2,7 @@ Comic Chat logs in comic mode are plain text files wrapped within an OLE2
 container. The format of the logs are human readable, yet contain enough
 information to recreate the comic view transcript, complete with emotions.
 
-The beginning of the format begins with a magic `CHATCONVERSATION` string, followed by some commands to initialize the buffer.
+The beginning of the format begins with a magic `#CHATCONVERSATION` string, followed by some commands to initialize the buffer.
 
 Lines are seperated by Windows style CRLFs. If a message has multiple lines, then those lines are in LF format to simplify parsing.
 
